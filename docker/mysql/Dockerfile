@@ -1,7 +1,7 @@
-FROM --platform=linux/x86_64 mysql:8.0.23
+FROM mysql:8.0
 
 ENV TZ=UTC
 
 COPY ./docker/mysql/my.cnf /etc/my.cnf
-RUN mkdir -p /var/log/mysql && \
-    chown mysql:mysql /var/log/mysql
+
+RUN chmod 644 /etc/my.cnf
