@@ -10,17 +10,17 @@
 
 - イメージをビルド
   ```cmd
-  y.kitamura@UQO370 laravel-vue-docker % docker compose build
+  laravel-vue-docker % docker compose build
   ```
 
 - コンテナの立ち上げ
   ```cmd
-  y.kitamura@UQO370 laravel-vue-docker % docker compose up -d
+  laravel-vue-docker % docker compose up -d
   ```
 
 - コンテナに入る
   ```cmd
-  y.kitamura@UQO370 laravel-vue-docker % docker compose exec app bash
+  laravel-vue-docker % docker compose exec app bash
   ```
 
 - コンテナ内でLarave10をインストール
